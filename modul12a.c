@@ -6,7 +6,7 @@ void IsiData(int data[], int *size){
     printf("Masukan ukuran array (max 100): ");
     scanf("%d", size);
     for(int i = 0; i<*size;i++){
-        printf("Masukan data ke-%d :", i+1); //i+1 karena indeks dimulai dari 0
+        printf("Masukan data ke-%d : ", i+1); //i+1 karena indeks dimulai dari 0
         scanf("%d", &data[i]);
     }
 }
@@ -14,10 +14,10 @@ void IsiData(int data[], int *size){
 //Tampilkan data, data = array data, size = ukuran array
 void TampilData(int data[], int size){
     for (int i=0;i<size;i++)
-        printf("%d\n");
+        printf("%d\n", data[i]);
 }
 
-//Insertion Sort, arr = array, n = ukuran array 
+//Insertion Sort Asc, arr = array, n = ukuran array 
 void InsertionSort(int arr[], int n){
     int i, key, j; //i dan j untuk iterasi, key untuk variabel penyimpanan sementara
     for(i=1; i<n; i++){
