@@ -83,7 +83,6 @@ int main(){
     int data[MAX]; //array data
     int size; //ukuran array yg digunakan
     IsiData(data, &size);
-    TampilkanData(data, size);
     MergeSort(data, 0, size-1); //indeks kiri = 0, kanan = ukuran array -1
     puts("\nData setelah diurutkan: ");
     TampilkanData(data, size);
