@@ -211,7 +211,7 @@ void main(){
 
     printf("\nData sebelum diurutkan: ");
     TampilData(data, size);
-
+    printf("Menjalankan sorting dengan metode");
     //Pengurutan data
     switch (metode)
     {
