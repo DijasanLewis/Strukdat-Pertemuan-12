@@ -21,23 +21,31 @@ void TampilData(int data[], int size){
 //Insertion Sort Asc, arr = array, n = ukuran array , mode=pengurutan 1.menaik/2.menurun
 void InsertionSort(int arr[], int n, int mode){
     int i, key, j; //i dan j untuk iterasi, key untuk variabel penyimpanan sementara
-    for(i=1; i<n; i++){
-        key = arr[i]; //key dimulai dari indeks 1
-        j = i-1; //yg mau dibandingkan dimulai dari angka sebelum key
-        if (mode==1){
+    //Ascending
+    if (mode==1){
+        for(i=1; i<n; i++){
+            key = arr[i]; //key dimulai dari indeks 1
+            j = i-1; //yg mau dibandingkan dimulai dari angka sebelum key
             while (j>=0 && arr[j]>key){
                 arr[j+1]=arr[j]; //data dimajukan ke depan
                 j=j-1; //indeksnya mundur
             }
+            arr[j+1] = key; //nilai yg ditukar adalah j+1!
         }
-        else if (mode==2){
+    }
+    //DESCENDING
+    else if (mode==2){
+        for(i=1; i<n; i++){
+            key = arr[i]; //key dimulai dari indeks 1
+            j = i-1; //yg mau dibandingkan dimulai dari angka sebelum key
             while (j>=0 && arr[j]<key){
                 arr[j+1]=arr[j]; //data dimajukan ke depan
                 j=j-1; //indeksnya mundur
             }
+            arr[j+1] = key; //nilai yg ditukar adalah j+1!
         }
-        arr[j+1] = key; //nilai yg ditukar adalah j+1!
     }
+
 }
 
 void main(){
