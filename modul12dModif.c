@@ -1,3 +1,12 @@
+/*NAMA      : YEDIJA LEWI SURYADI
+ *NIM       : 222212921
+ *KELAS     : 2KS1
+ *NO. ABSEN : 36
+ STRUKTUR DATA MODUL 12 bagian 1d:
+    Modifikasilah file modul12a.c, modul12b.c, modul12c.c, dan modul12d.c
+    supaya dapat juga mengakomodasi pengurutan data menurun (descending).
+*/
+
 #include <stdio.h>
 #define MAX 100 //ukuran maks array
 

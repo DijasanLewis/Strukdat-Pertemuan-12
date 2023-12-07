@@ -1,3 +1,13 @@
+/*NAMA      : YEDIJA LEWI SURYADI
+ *NIM       : 222212921
+ *KELAS     : 2KS1
+ *NO. ABSEN : 36
+ STRUKTUR DATA MODUL 12 bagian 2:
+    Gabungkan keempat metode sorting tersebut, kemudian buatlah sebuah menu
+    sehingga pengguna dapat memilih metode pengurutan yang diinginkan dan juga
+    memilih urutan menaik atau menurun.
+*/
+
 #include <stdio.h>
 #define MAX 100 //ukuran max array
 
